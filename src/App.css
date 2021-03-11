@@ -1,3 +1,7 @@
+:root {
+  background-color: black !important;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +39,89 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+input{
+  padding: 10px 20px;
+  width: 30vw;
+  border-radius: 3px;
+  border: 2px solid #0063db;
+  margin-right: -100px;
+  padding-right: 130px;
+}
+
+button {
+  padding: 10px 40px;
+  border: 2px solid #0063db;
+  background-color: #0063db;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 50px;
+  text-align: center;
+}
+
+img {
+  width: auto;
+  height: 200px;
+}
+
+.logo{
+  margin-top: 50px;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+  /* border-radius: 50%; */
+}
+
+.container-photo {
+  width: 100%;
+  text-align: center;
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.pict-item {
+  margin-bottom: 20px;
+}
+
+.tags-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn-tag {
+  border-radius: 30px;
+  margin: 20px;
+}
+
+.btn-tag:hover {
+  cursor: pointer;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.text-page {
+  font-size: 38px;
+  width: 380px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0px;
 }
