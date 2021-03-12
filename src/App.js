@@ -25,30 +25,33 @@ function App() {
   const handleClickArchitecture = (e) => {
     e.preventDefault();
     setTags("Architecture");
+    setPage(1);
     callData();
   };
 
   const handleClickArt = (e) => {
     e.preventDefault();
     setTags("Art");
+    setPage(1)
     callData();
   };
 
   const handleClickFlower = (e) => {
     e.preventDefault();
     setTags("Flower");
+    setPage(1)
     callData();
   };
 
   const handleClickNature = (e) => {
     e.preventDefault();
     setTags("Nature");
+    setPage(1)
     callData();
   };
 
   const previous = () => {
     setPage(page <= 1 ? 1 : page - 1);
-    console.log(page);
     callData();
   };
 
@@ -113,7 +116,7 @@ function App() {
               src={`http://farm${item.farm}.staticflickr.com/${item.server}/${item.id}_${item.secret}.jpg`}
               alt={item.id}
               key={idx}
-              className='pict-item'
+              className="pict-item"
             />
           ))
         ) : (
